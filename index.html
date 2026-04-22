@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bx Realty — Bathurst Real Estate Agents</title>
+  <meta name="description" content="Bx Realty — professional real estate agents in Bathurst, NSW. Buy, sell, rent or get a free market appraisal today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <!-- ── Hero ──────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="section-label">Bathurst &amp; Region</span>
+        <h1>Your Local <span>Property</span> Experts</h1>
+        <p>Whether you're buying, selling, or renting — Bx Realty delivers honest, professional real estate services across Bathurst and the surrounding region.</p>
+        <div class="hero-actions">
+          <a href="listings.html" class="btn btn-primary">View Listings</a>
+          <a href="appraisal.html" class="btn btn-outline">Free Appraisal</a>
+        </div>
+        <div class="hero-stat-row">
+          <div class="hero-stat">
+            <strong>—</strong>
+            <span>Properties Sold</span>
+          </div>
+          <div class="hero-stat">
+            <strong>—</strong>
+            <span>Days Avg. on Market</span>
+          </div>
+          <div class="hero-stat">
+            <strong>5★</strong>
+            <span>Client Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick appraisal form -->
+      <div class="hero-form-card">
+        <h3>Request a Free Appraisal</h3>
+        <p class="text-muted">Find out what your property is worth — no obligation.</p>
+        <form action="appraisal.html" method="get">
+          <div class="form-group">
+            <label for="hero-name">Your name</label>
+            <input type="text" id="hero-name" class="form-control" placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="hero-phone">Phone number</label>
+            <input type="tel" id="hero-phone" class="form-control" placeholder="0400 000 000" />
+          </div>
+          <div class="form-group">
+            <label for="hero-address">Property address</label>
+            <input type="text" id="hero-address" class="form-control" placeholder="123 Example St, Bathurst" />
+          </div>
+          <button type="submit" class="btn btn-navy" style="width:100%;">Get My Free Appraisal &rarr;</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Listings ──────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+        <div>
+          <span class="section-label">Properties</span>
+          <h2>Featured Listings</h2>
+        </div>
+        <a href="listings.html" class="btn btn-navy">View All Listings</a>
+      </div>
+
+      <!-- NOTE TO DEV: Replace with Agent Box / Reapit API feed -->
+      <div class="listings-grid">
+
+        <article class="listing-card">
+          <div class="listing-img">
+            <div class="listing-img-placeholder">Photo — Agent Box sync pending</div>
+            <span class="listing-badge">For Sale</span>
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">$[Price]</div>
+            <div class="listing-address">123 Sample Street, Bathurst NSW 2795</div>
+            <div class="listing-features">
+              <span class="listing-feat">&#x1F6CF; <span>4</span></span>
+              <span class="listing-feat">&#x1F6C1; <span>2</span></span>
+              <span class="listing-feat">&#x1F697; <span>2</span></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="listing-card">
+          <div class="listing-img">
+            <div class="listing-img-placeholder">Photo — Agent Box sync pending</div>
+            <span class="listing-badge">For Sale</span>
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">$[Price]</div>
+            <div class="listing-address">45 Example Road, Bathurst NSW 2795</div>
+            <div class="listing-features">
+              <span class="listing-feat">&#x1F6CF; <span>3</span></span>
+              <span class="listing-feat">&#x1F6C1; <span>1</span></span>
+              <span class="listing-feat">&#x1F697; <span>1</span></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="listing-card">
+          <div class="listing-img">
+            <div class="listing-img-placeholder">Photo — Agent Box sync pending</div>
+            <span class="listing-badge rental">For Rent</span>
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">$[pw] per week</div>
+            <div class="listing-address">7 Demo Close, Bathurst NSW 2795</div>
+            <div class="listing-features">
+              <span class="listing-feat">&#x1F6CF; <span>3</span></span>
+              <span class="listing-feat">&#x1F6C1; <span>1</span></span>
+              <span class="listing-feat">&#x1F697; <span>1</span></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services ───────────────────────────────────────────── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">What We Do</span>
+        <h2>Our Services</h2>
+        <p>Comprehensive real estate services tailored to buyers, sellers, and property investors across the Bathurst region.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#x1F3E0;</div>
+          <h3>Residential Sales</h3>
+          <p>From appraisal to settlement, we guide you through the entire sales process with clear communication and proven results.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#x1F511;</div>
+          <h3>Property Management</h3>
+          <p>Full-service management for landlords — tenant screening, rent collection, maintenance coordination, and regular reporting.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#x1F50D;</div>
+          <h3>Buyer's Agency</h3>
+          <p>Looking to purchase in Bathurst? We represent buyers exclusively, helping you find and secure the right property at the right price.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:36px;">
+        <a href="services.html" class="btn btn-navy">Learn More About Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About strip ────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="about-strip">
+        <div style="background:var(--light-grey); border-radius:14px; aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; color:var(--mid-grey); font-size:0.875rem; font-style:italic;">
+          Photo — coming soon
+        </div>
+        <div class="about-strip-text">
+          <span class="section-label">About Bx Realty</span>
+          <h2>Local Knowledge, Professional Results</h2>
+          <p>Bx Realty was founded with one goal — to bring a higher standard of service to Bathurst's property market. We combine deep local knowledge with modern marketing tools to deliver exceptional outcomes for our clients.</p>
+          <div class="about-points">
+            <div class="about-point"><div class="about-point-icon">&#x2713;</div><span>Transparent fees with no hidden costs</span></div>
+            <div class="about-point"><div class="about-point-icon">&#x2713;</div><span>Listings syndicated to realestate.com.au and Domain</span></div>
+            <div class="about-point"><div class="about-point-icon">&#x2713;</div><span>Regular updates and clear communication</span></div>
+            <div class="about-point"><div class="about-point-icon">&#x2713;</div><span>Dedicated local team based in Bathurst</span></div>
+          </div>
+          <a href="team.html" class="btn btn-primary">Meet the Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ───────────────────────────────────────── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Client Reviews</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real reviews from real clients. See more on <a href="https://www.realestate.com.au/agent/ellie-begg-3673016" target="_blank" rel="noopener" style="color:var(--gold);">realestate.com.au</a>.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <blockquote>"Placeholder — review to be imported from realestate.com.au profile."</blockquote>
+          <div class="testimonial-author">Client Name</div>
+          <div class="testimonial-source">realestate.com.au</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <blockquote>"Placeholder — review to be imported from realestate.com.au profile."</blockquote>
+          <div class="testimonial-author">Client Name</div>
+          <div class="testimonial-source">realestate.com.au</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <blockquote>"Placeholder — review to be imported from realestate.com.au profile."</blockquote>
+          <div class="testimonial-author">Client Name</div>
+          <div class="testimonial-source">realestate.com.au</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Appraisal CTA ──────────────────────────────────────── -->
+  <section class="section section-dark" style="text-align:center;">
+    <div class="container">
+      <span class="section-label" style="color:var(--gold-light);">Free &amp; No Obligation</span>
+      <h2 style="margin-bottom:14px;">Thinking of Selling or Renting?</h2>
+      <p style="max-width:520px; margin:0 auto 32px;">Get a free, accurate market appraisal from a local expert. No pressure, no obligation — just honest advice.</p>
+      <a href="appraisal.html" class="btn btn-primary" style="font-size:1rem; padding:16px 36px;">Request Your Free Appraisal</a>
+    </div>
+  </section>
+
+  <!-- ── Latest News ────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+        <div>
+          <span class="section-label">Latest</span>
+          <h2>News &amp; Insights</h2>
+        </div>
+        <a href="blog.html" class="btn btn-navy">All Articles</a>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-card-img">Image placeholder</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Market Update</span>
+            <h3>Bathurst Property Market — What to Expect in 2025</h3>
+            <p>A look at current market conditions, median prices, and what buyers and sellers should know heading into winter.</p>
+            <div class="blog-meta">Ellie Begg &nbsp;·&nbsp; Coming soon</div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-img">Image placeholder</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Selling Tips</span>
+            <h3>5 Simple Ways to Add Value Before You Sell</h3>
+            <p>Small improvements that make a big difference to your final sale price — without a major renovation.</p>
+            <div class="blog-meta">Ellie Begg &nbsp;·&nbsp; Coming soon</div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-img">Image placeholder</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Renting</span>
+            <h3>Rental Market Update: Bathurst Q1 2025</h3>
+            <p>Vacancy rates, average weekly rents, and what investors need to know about the Bathurst rental market.</p>
+            <div class="blog-meta">Ellie Begg &nbsp;·&nbsp; Coming soon</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="components.js"></script>
+</body>
+</html>

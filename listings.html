@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties — Bx Realty Bathurst</title>
+  <meta name="description" content="Browse current property listings for sale and rent in Bathurst with Bx Realty." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <div style="background:var(--off-white); border-bottom:1px solid var(--light-grey); padding:48px 24px;">
+    <div class="container">
+      <span class="section-label">Browse</span>
+      <h1>Properties</h1>
+      <p>Current listings for sale and rent across Bathurst and the region.</p>
+    </div>
+  </div>
+
+  <!-- Filter bar -->
+  <div style="background:var(--white); border-bottom:1px solid var(--light-grey); padding:16px 24px;">
+    <div class="container" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+      <select class="form-control" style="width:auto; min-width:160px;">
+        <option>All Types</option>
+        <option>For Sale</option>
+        <option>For Rent</option>
+        <option>Sold</option>
+      </select>
+      <select class="form-control" style="width:auto; min-width:160px;">
+        <option>All Bedrooms</option>
+        <option>1+ Bed</option>
+        <option>2+ Beds</option>
+        <option>3+ Beds</option>
+        <option>4+ Beds</option>
+      </select>
+      <select class="form-control" style="width:auto; min-width:180px;">
+        <option>All Prices</option>
+        <option>Under $400,000</option>
+        <option>$400k – $600k</option>
+        <option>$600k – $800k</option>
+        <option>$800k+</option>
+      </select>
+      <button class="btn btn-navy">Search</button>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <!-- NOTE TO DEV: This grid will be dynamically populated via Agent Box / Reapit API integration -->
+      <p style="background:var(--off-white); border:1px dashed var(--mid-grey); border-radius:var(--radius-md); padding:20px; font-size:0.9rem; color:var(--text-muted); text-align:center; margin-bottom:40px;">
+        &#x1F6A7; &nbsp;<strong>Developer note:</strong> This section will be auto-populated via the Reapit Sales / Agent Box CRM API. Placeholder cards shown below.
+      </p>
+      <div class="listings-grid" id="listings-container">
+        <!-- Placeholder cards x6 -->
+        <article class="listing-card">
+          <div class="listing-img"><div class="listing-img-placeholder">Photo pending</div><span class="listing-badge">For Sale</span></div>
+          <div class="listing-body"><div class="listing-price">$[Price]</div><div class="listing-address">Address, Bathurst NSW 2795</div><div class="listing-features"><span class="listing-feat">&#x1F6CF; 4</span><span class="listing-feat">&#x1F6C1; 2</span><span class="listing-feat">&#x1F697; 2</span></div></div>
+        </article>
+        <article class="listing-card">
+          <div class="listing-img"><div class="listing-img-placeholder">Photo pending</div><span class="listing-badge">For Sale</span></div>
+          <div class="listing-body"><div class="listing-price">$[Price]</div><div class="listing-address">Address, Bathurst NSW 2795</div><div class="listing-features"><span class="listing-feat">&#x1F6CF; 3</span><span class="listing-feat">&#x1F6C1; 1</span><span class="listing-feat">&#x1F697; 1</span></div></div>
+        </article>
+        <article class="listing-card">
+          <div class="listing-img"><div class="listing-img-placeholder">Photo pending</div><span class="listing-badge rental">For Rent</span></div>
+          <div class="listing-body"><div class="listing-price">$[pw]/wk</div><div class="listing-address">Address, Bathurst NSW 2795</div><div class="listing-features"><span class="listing-feat">&#x1F6CF; 3</span><span class="listing-feat">&#x1F6C1; 1</span><span class="listing-feat">&#x1F697; 1</span></div></div>
+        </article>
+        <article class="listing-card">
+          <div class="listing-img"><div class="listing-img-placeholder">Photo pending</div><span class="listing-badge">For Sale</span></div>
+          <div class="listing-body"><div class="listing-price">$[Price]</div><div class="listing-address">Address, Bathurst NSW 2795</div><div class="listing-features"><span class="listing-feat">&#x1F6CF; 5</span><span class="listing-feat">&#x1F6C1; 3</span><span class="listing-feat">&#x1F697; 2</span></div></div>
+        </article>
+        <article class="listing-card">
+          <div class="listing-img"><div class="listing-img-placeholder">Photo pending</div><span class="listing-badge rental">For Rent</span></div>
+          <div class="listing-body"><div class="listing-price">$[pw]/wk</div><div class="listing-address">Address, Bathurst NSW 2795</div><div class="listing-features"><span class="listing-feat">&#x1F6CF; 2</span><span class="listing-feat">&#x1F6C1; 1</span><span class="listing-feat">&#x1F697; 1</span></div></div>
+        </article>
+        <article class="listing-card">
+          <div class="listing-img"><div class="listing-img-placeholder">Photo pending</div><span class="listing-badge">For Sale</span></div>
+          <div class="listing-body"><div class="listing-price">$[Price]</div><div class="listing-address">Address, Bathurst NSW 2795</div><div class="listing-features"><span class="listing-feat">&#x1F6CF; 4</span><span class="listing-feat">&#x1F6C1; 2</span><span class="listing-feat">&#x1F697; 2</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="components.js"></script>
+</body>
+</html>

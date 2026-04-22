@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Bx Realty Bathurst</title>
+  <meta name="description" content="Get in touch with Bx Realty — real estate agents in Bathurst, NSW." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <div style="background:var(--off-white); border-bottom:1px solid var(--light-grey); padding:48px 24px;">
+    <div class="container">
+      <span class="section-label">We'd Love to Hear From You</span>
+      <h1>Contact Us</h1>
+      <p>Reach out with any questions about buying, selling, or renting. Our team will respond within one business day.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>Whether you have a quick question or want to discuss your property goals, we're here to help.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">&#x1F4DE;</div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:0498193223" style="color:var(--gold); font-weight:600;">0498 193 223</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">&#x2709;</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:ellie@bxrealty.com.au" style="color:var(--gold);">ellie@bxrealty.com.au</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">&#x1F4CD;</div>
+              <div>
+                <strong>Location</strong>
+                <span>Bathurst, NSW 2795</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">&#x1F552;</div>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon – Fri: 8:30am – 5:30pm<br />Sat: By appointment</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 style="margin-bottom:12px;">Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/ellie_agentchapman_realtor/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="https://www.facebook.com/profile.php?id=61573810007004" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://www.tiktok.com/@ellie.begg.realto" class="social-link" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3 style="margin-bottom:6px;">Send Us a Message</h3>
+          <p class="text-muted" style="font-size:0.875rem; margin-bottom:24px;">We'll get back to you within one business day.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ct-name">Full name *</label>
+                <input type="text" id="ct-name" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="ct-phone">Phone</label>
+                <input type="tel" id="ct-phone" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ct-email">Email address *</label>
+              <input type="email" id="ct-email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="ct-subject">Subject</label>
+              <select id="ct-subject" class="form-control">
+                <option>General enquiry</option>
+                <option>Buying</option>
+                <option>Selling</option>
+                <option>Renting</option>
+                <option>Property management</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ct-msg">Message *</label>
+              <textarea id="ct-msg" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message &rarr;</button>
+          </form>
+          <div id="contact-success" style="display:none; text-align:center; padding:32px 0;">
+            <div style="font-size:2.5rem; margin-bottom:12px;">&#x2713;</div>
+            <h3 style="margin-bottom:8px;">Message sent!</h3>
+            <p>Thanks for reaching out. We'll be in touch within one business day.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map placeholder -->
+      <div style="margin-top:56px; background:var(--light-grey); border-radius:var(--radius-lg); height:280px; display:flex; align-items:center; justify-content:center; color:var(--mid-grey); font-style:italic; font-size:0.875rem; border:1px solid var(--light-grey);">
+        Google Map embed — Bathurst, NSW (to be configured with office address)
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="components.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('contact-success').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
